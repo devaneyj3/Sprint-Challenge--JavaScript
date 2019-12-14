@@ -97,8 +97,9 @@ The resulting contact information strings should have a space between the first 
 Log the result of your new array. */
 let contactInfo = [];
 graduates.forEach(element => {
-  contactInfo.push(element.first_name, element.email);
-  contactInfo.toString().split(',', ' ');  
+  let info = `${element.first_name} ${element.email}`;
+  info.toString().split(',', ' ');  
+  contactInfo.push(info);
 });
 console.log(contactInfo);
 
