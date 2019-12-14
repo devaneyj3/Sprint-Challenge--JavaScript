@@ -30,13 +30,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    forEach modifies an existing array and map creats a new array.
+
 2. What is the difference between a function and a method?
 
-3. What is closure?
+    a method is defined in the function and defines what the function can do.
+
+3. What is closure? -ask about this more in depth
+
+    This refers to the lexical enviroment where the variable is defined within the function.
+    Inner functions are nested within outer functions and this is a closure
 
 4. Describe the four rules of the 'this' keyword.
 
+    1. Implicit - refers to the object it is creating within the constructor.
+    2. Explicit - this can be binded to different objects using the call, appy, and bind keyword.
+    3. new - this refers to the new object the function or the class creates.
+    4. window - this refers to the whole window object for example `console.log(this)`
+
 5. Why do we need super() in an extended class?
+
+    super() is a substitute in ES6 to replace parent.call() and object.create() and it is used
+    in a class to have inheritance flow down to the children.
 
 ## Project Set up
 
